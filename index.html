@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Money Converter</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+
+
+	body{
+		background-color: #66c5f3;
+	}
+
+	#show{
+		font-size: 50px;
+	}
+
+	</style>
+</head>
+<body>
+		<h1></h1>
+
+	<br>
+	<center>
+
+			<h1 style="font-family: times new roman;">Money Converter</h1>
+
+			<br>
+		<img src="https://i.pinimg.com/originals/c6/1f/30/c61f300bfa63b17eb816952be8ee875f.gif" alt= "Money" width="500" height="400">
+
+		<br> <br>
+
+
+	<p id="display"></p>
+	<script>
+
+		var peso="100";
+
+		document.getElementById('display').innerHTML = "100";
+		
+		var peso = "<h1>100</h1>";
+		var yuan= 0.12 //As of January 15, 2025, 9:52 AM
+		var baht= 0.59 //As of January 15, 2025, 9:23 AM
+
+		document.getElementById('display').innerHTML = "Click the buttons below to convert " + peso + " to other currencies.";
+	</script>
+
+
+	<p id="show"></p>
+	<button type="button" class="btn btn-primary" onclick=" var yuan='0.12'; peso='100'; document.getElementById('show').innerHTML = yuan * peso;">Yuan</button>
+	<button type="button" class="btn btn-warning" onclick=" var baht='0.59'; peso='100'; document.getElementById('show').innerHTML = baht * peso;">Baht</button>
+	<br><br>
+	<a href="index.html"><button type="button" class="btn btn-danger">Refresh</button>
+
+</body>
+</html>
